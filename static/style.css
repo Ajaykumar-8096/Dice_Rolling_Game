@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px cyan;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: cyan;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px cyan;
+}
+
+.dice-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dice-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: rgba(0, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.dice-box img {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.2s;
+}
+
+#resultText {
+    margin-top: 25px;
+    font-size: 24px;
+    text-shadow: 0 0 15px white;
+}
+#scoreboard {
+    margin-top: 20px;
+    font-size: 18px;
+}
+

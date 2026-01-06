@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dice Rolling Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎲 Dice Rolling Game</h1>
+
+    <button id="rollBtn">Roll Dice</button>
+
+    <div class="dice-area">
+        <div class="dice-box">
+            <img id="userDice" src="{{ url_for('static', filename='dice1.png') }}">
+            <p>You</p>
+        </div>
+
+        <div class="dice-box">
+            <img id="cpuDice" src="{{ url_for('static', filename='dice1.png') }}">
+            <p>CPU</p>
+        </div>
+    </div>
+
+    <p id="resultText"></p>
+
+    <!-- 🔥 Scorecard -->
+    <div id="scoreboard">
+        <p>🏆 Wins: <span id="wins">0</span></p>
+        <p>❌ Losses: <span id="losses">0</span></p>
+        <p>🤝 Ties: <span id="ties">0</span></p>
+    </div>
+
+    <audio id="rollSound" src="{{ url_for('static', filename='roll.mp3') }}"></audio>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
